@@ -9,6 +9,7 @@ class home_page extends StatefulWidget {
 }
 
 class _home_pageState extends State<home_page> {
+  final postTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,15 +27,52 @@ class _home_pageState extends State<home_page> {
               CircleAvatar(
                   radius: 21,
                   backgroundImage: AssetImage("assets/images/eli.jpg")),
-
-              // TextField(
-              //   controller: postTextController,
-              //   decoration: const InputDecoration(
-              //       border: OutlineInputBorder(),
-              //       hintText: "What's on your mind?",
-              //       filled: true
-              //   ),
-              // )
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                flex: 5,
+                child: SizedBox(
+                  height: 40,
+                  width: 230,
+                  child: TextField(
+                    style:
+                        TextStyle(fontSize: 15, height: 3, color: Colors.black),
+                    controller: postTextController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(20.0),
+                        ),
+                        borderSide: BorderSide(
+                          width: 0,
+                        ),
+                      ),
+                      hintText: "What's on your mind?",
+                      filled: true,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 2,
+              ),
+              Expanded(
+                flex: 1,
+                child: SizedBox(
+                    height: 40,
+                    width: 230,
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.image,
+                          size: 26,
+                          color: Colors.green,
+                        ))),
+              ),
+              SizedBox(
+                width: 10,
+              ),
             ],
           ),
           Column(
