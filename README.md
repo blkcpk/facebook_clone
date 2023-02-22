@@ -1,6 +1,6 @@
-# login_with_signup
+# Facebook Clone
 
-Login with signup practice project.
+Facebook Clone project.
 
 ## Getting Started
 
