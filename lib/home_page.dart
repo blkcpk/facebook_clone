@@ -9,6 +9,7 @@ class home_page extends StatefulWidget {
 }
 
 class _home_pageState extends State<home_page> {
+  final postTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,17 +27,43 @@ class _home_pageState extends State<home_page> {
               CircleAvatar(
                   radius: 21,
                   backgroundImage: AssetImage("assets/images/eli.jpg")),
-
-              // TextField(
-              //   controller: postTextController,
-              //   decoration: const InputDecoration(
-              //       border: OutlineInputBorder(),
-              //       hintText: "What's on your mind?",
-              //       filled: true
-              //   ),
-              // )
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "What's on your mind?",
+                    textDirection: TextDirection.ltr,
+                    textAlign: TextAlign.left,
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  style: TextButton.styleFrom(
+                    shape: StadiumBorder(),
+                    backgroundColor: Colors.white,
+                    foregroundColor: Color.fromARGB(137, 43, 42, 42),
+                    side: BorderSide(color: Colors.black54, width: 0.5),
+                  ),
+                ),
+              ),
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.image,
+                    color: Colors.green,
+                  )),
+              SizedBox(
+                width: 5,
+              )
             ],
           ),
+          Expanded(
+              child: Divider(
+            color: Color.fromARGB(255, 210, 208, 208),
+            height: 20,
+            thickness: 10,
+          )),
           Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -76,7 +103,7 @@ class _home_pageState extends State<home_page> {
                             color: Colors.grey,
                             fontSize: 10,
                             fontWeight: FontWeight.bold)),
-                    Text("This project was made for educational purposes only.",
+                    Text("This project is for educational purposes only.",
                         style: TextStyle(color: Colors.grey, fontSize: 10))
                   ],
                 )

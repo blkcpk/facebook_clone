@@ -70,7 +70,7 @@ class _notifications_pageState extends State<notifications_page> {
                             color: Colors.grey,
                             fontSize: 10,
                             fontWeight: FontWeight.bold)),
-                    Text("This project was made for educational purposes only.",
+                    Text("This project is for educational purposes only.",
                         style: TextStyle(color: Colors.grey, fontSize: 10))
                   ],
                 )

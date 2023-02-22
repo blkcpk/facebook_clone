@@ -70,7 +70,7 @@ class _menu_pageState extends State<menu_page> {
                             color: Colors.grey,
                             fontSize: 10,
                             fontWeight: FontWeight.bold)),
-                    Text("This project was made for educational purposes only.",
+                    Text("This project is for educational purposes only.",
                         style: TextStyle(color: Colors.grey, fontSize: 10))
                   ],
                 )
