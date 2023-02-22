@@ -31,7 +31,6 @@ class _home_pageState extends State<home_page> {
                 width: 10,
               ),
               Expanded(
-<<<<<<< HEAD
                 child: TextButton(
                   onPressed: () {},
                   child: Text(
@@ -56,8 +55,8 @@ class _home_pageState extends State<home_page> {
                   )),
               SizedBox(
                 width: 5,
-              )
-=======
+              ),
+              Expanded(
                 flex: 5,
                 child: SizedBox(
                   height: 40,
@@ -100,7 +99,6 @@ class _home_pageState extends State<home_page> {
               SizedBox(
                 width: 10,
               ),
->>>>>>> 95dcd7ea0fba55336a2b119263b1ef70967aaf03
             ],
           ),
           Expanded(
